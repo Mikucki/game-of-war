@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="play">
+      <button id="new-deck">New Deck</button>
+
+      <button disabled id="draw-cards">Draw</button>
+    </div>
+    <h1 class="title" id="title">Game of war!</h1>
+    <h3 class="cards-left" id="cards-left">Click new Deck</h3>
+    <div id="cards">
+      <div class="card-slot" id="card-slot1"></div>
+      <div>
+        <h2>Score:</h2>
+        <div class="scores" id="scores"></div>
+      </div>
+      <div class="card-slot" id="card-slot2"></div>
+    </div>
+    <div id="ultimateWinner"></div>
+    <script src="index.js"></script>
+  </body>
+</html>

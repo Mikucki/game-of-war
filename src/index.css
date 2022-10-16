@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(./img/table.png);
+  background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+#new-deck {
+  flex-basis: 50vw;
+  background-color: yellow;
+  padding: 1em;
+  font-size: 1.5rem;
+  border: 1px solid black;
+}
+
+.play {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#draw-cards {
+  flex-basis: 50vw;
+  background-color: yellow;
+  padding: 1em;
+  font-size: 1.5rem;
+}
+
+#cards {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10vw;
+  justify-content: center;
+  align-items: center;
+  min-height: 59vh;
+}
+
+div.card-slot {
+  border: 1px solid black;
+  border-radius: 11px;
+  height: 40vh;
+  width: calc(40vh * 5 / 7);
+  gap: 10vw;
+}
+
+#card-slot1 img,
+#card-slot2 img {
+  border: 1px solid black;
+  border-radius: 11px;
+  height: 40vh;
+  width: calc(40vh * 5 / 7);
+  gap: 10vw;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.title {
+  color: #ebebeb;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.cards-left {
+  text-align: center;
+}
+
+.winner {
+  position: fixed;
+  top: 40%;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 9rem;
+  color: yellow;
+}
